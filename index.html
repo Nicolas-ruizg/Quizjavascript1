@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Plataforma de Cursos</h1>
+        <p>Explora nuestros cursos interactivos y mejora tus habilidades.</p>
+    </header>
+    <main>
+        <section id="course-form">
+            <h2>Agregar o Editar un Curso</h2>
+            <p>Completa el siguiente formulario para gestionar tus cursos:</p>
+            <form id="form">
+                <input type="hidden" id="course-id">
+                <label for="course-name">Nombre del Curso:</label>
+                <input type="text" id="course-name" placeholder="Escribe el nombre del curso" required>
+                
+                <label for="course-description">Descripción del Curso:</label>
+                <textarea id="course-description" placeholder="Escribe una breve descripción del curso" required></textarea>
+                <button type="submit">Guardar Curso</button>
+            </form>
+        </section>
+        <section id="course-list">
+            <h2>Mis Cursos</h2>
+            <p>Aquí puedes ver todos tus cursos disponibles:</p>
+            <ul id="courses">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
